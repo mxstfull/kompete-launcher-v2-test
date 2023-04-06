@@ -1,0 +1,109 @@
+{
+  "extends": [
+    "tslint:recommended"
+  ],
+  "defaultSeverity": "error",
+  "rules": {
+    "array-type": [
+      true,
+      "generic"
+    ],
+    "ordered-imports": [
+      true,
+      {
+        "named-imports-order": "any",
+        "import-sources-order": "any",
+        "grouped-imports": true,
+        "groups": [
+          {
+            "name": "local_deps",
+            "match": "\\./_$",
+            "order": 0
+          },
+          {
+            "name": "global_deps",
+            "match": "\\./__$",
+            "order": 1
+          },
+          {
+            "name": "framework",
+            "match": "\\./\\$",
+            "order": 3
+          },
+          {
+            "name": "local",
+            "match": "\\./_.*",
+            "order": 4
+          },
+          {
+            "name": "export",
+            "match": "\\./.*",
+            "order": 5
+          },
+          {
+            "name": "unmatched",
+            "order": 2
+          }
+        ]
+      }
+    ],
+    "variable-name": {
+      "options": [
+        "check-format",
+        "allow-leading-underscore",
+        "allow-pascal-case"
+      ]
+    },
+    "quotemark": [
+      false
+    ],
+    "semicolon": [
+      true,
+      "always"
+    ],
+    "indent": [
+      true,
+      "spaces",
+      2
+    ],
+    "no-console": [
+      false
+    ],
+    "class-name": [
+      false
+    ],
+    "interface-name": [
+      true,
+      "never-prefix"
+    ],
+    "type-literal-delimiter": [
+      true,
+      {
+        "singleLine": "always"
+      }
+    ],
+    "no-empty": [
+      true,
+      "allow-empty-catch",
+      "allow-empty-functions"
+    ],
+    "linebreak-style": false,
+    "no-duplicate-imports": true,
+    "no-unused-expression": true,
+    "no-floating-promises": true,
+    "no-unnecessary-type-assertion": true,
+    "strict-string-expressions": true,
+    "strict-type-predicates": true,
+    "strict-boolean-expressions": true,
+    "triple-equals": true,
+    "prefer-template": true,
+    "interface-over-type-literal": true,
+    "no-string-literal": true,
+    "member-access": false,
+    "object-literal-sort-keys": false,
+    "max-line-length": false,
+    "max-classes-per-file": false,
+    "no-empty-interface": false
+  },
+  "rulesDirectory": []
+}

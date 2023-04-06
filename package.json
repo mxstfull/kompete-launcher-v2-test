@@ -1,0 +1,45 @@
+{
+  "private": true,
+  "name": "patchkit-generic-patcher2_default_theme",
+  "scripts": {
+    "run-theme-dev": "ts-node scripts/run_theme_dev_main.ts",
+    "build-theme-prod": "ts-node scripts/build_theme_prod_main.ts"
+  },
+  "dependencies": {
+    "chroma-js": "1.4.1",
+    "emotion": "10.0.27",
+    "offline-plugin": "5.0.7",
+    "patchkit-generic-patcher2_foundation": "0.0.1",
+    "patchkit-generic-patcher2_ipc": "0.0.1",
+    "react": "16.14.0",
+    "react-dom": "16.14.0",
+    "webfontloader": "1.6.28",
+    "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "@types/chroma-js": "1.4.3",
+    "@types/html-webpack-plugin": "^3.2.6",
+    "@types/node": "12.20.42",
+    "@types/react": "16.9.53",
+    "@types/react-dom": "16.9.8",
+    "@types/webfontloader": "1.6.28",
+    "@types/webpack": "4.41.32",
+    "@types/webpack-dev-server": "3.11.3",
+    "@types/webpack-hot-middleware": "2.25.5",
+    "file-loader": "1.1.11",
+    "html-webpack-plugin": "3.2.0",
+    "patchkit-patcher2_theme_dev_tools_webpack_plugin": "0.0.2",
+    "source-map-loader": "0.2.4",
+    "ts-loader": "6.2.2",
+    "ts-node": "10.4.0",
+    "tsconfig-paths-webpack-plugin": "3.5.2",
+    "typescript": "3.8.3",
+    "webpack": "4.46.0",
+    "webpack-dev-server": "3.11.3",
+    "webpack-hot-middleware": "2.25.1",
+    "webpack-inject-plugin": "1.5.5"
+  },
+  "installConfig": {
+    "hoistingLimits": "workspaces"
+  }
+}
